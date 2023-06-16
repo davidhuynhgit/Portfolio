@@ -1,5 +1,6 @@
 //code from here
 const menuBtn=document.querySelector('.menu-btn');
+const menuBtnExtra=document.querySelector('.menu-btn-extra');
 const menu=document.querySelector('.menu');
 const menuNav=document.querySelector('.menu-nav');
 const menuBranding=document.querySelector('.menu-branding');
@@ -7,6 +8,7 @@ const navItems=document.querySelectorAll('.nav-item');
 
 let showMenu =false;
 menuBtn.addEventListener('click',toggleMenu);
+menuBtnExtra.addEventListener('click',toggleMenu);
 
 function toggleMenu(){
     if(!showMenu){
@@ -24,7 +26,5 @@ function toggleMenu(){
         menuBranding.classList.remove('show');
         navItems.forEach(item=>item.classList.remove('show'));
         showMenu=false;
-
-
     }
 }
