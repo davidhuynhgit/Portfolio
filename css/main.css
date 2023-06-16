@@ -377,7 +377,7 @@ main {
 
 
 .detail-btn {
-   background: linear-gradient(to right, #549e78 0%, #fceeb5 50%, #ee786e 100%);
+  background: linear-gradient(to right, #549e78 0%, #fceeb5 50%, #ee786e 100%);
   background-size: 500%;
   border: none;
   border-radius: 5rem;
@@ -423,4 +423,56 @@ main {
 .logo-icon{
   width: 2rem;
   height: 2rem;
+}
+
+.contact-text{  
+  width: 60%;
+  min-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.contact-container{  
+  width: 25%;
+  min-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+
+
+
+.card{
+  margin: 10px 0;
+}
+
+.card > a{
+  text-decoration: none !important;
+  color: black;
+}
+
+.card > a:hover{
+  color: white;
+}
+
+.card-facebook{
+  background-image: linear-gradient(to right, rgba(22, 164, 251, 1) , rgba(22, 164, 251, 0.7));
+  border: none;
+}
+
+.card-linkedin{
+  background-image: linear-gradient(to left, rgba(10, 102, 194, 1) , rgba(10, 102, 194, 0.7));
+  border: none;
+}
+
+.card-gmail{
+  background-image: linear-gradient(to right, rgba(234, 67, 53, 1) , rgba(234, 67, 53, 0.7));
+  border: none;
+}
+
+.card-phone{
+  background-image: linear-gradient(to left, rgba(42, 179, 24, 1) , rgba(42, 179, 24, 0.7));
+  border: none;
 }
