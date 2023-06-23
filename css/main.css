@@ -147,14 +147,14 @@ body {
       height: 100%;
       z-index: -1;
       background: rgba(0, 0, 0, 0); }
-    #index-background {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%vh;
-    height: 100%vh;
-    z-index: -1;
-    background: rgba(224, 34, 34, 0);
+    #index-background {    
+      position: fixed;
+      right: 0;
+      top: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      background: rgba(224, 34, 34, 0);
   }
 
 h1,
@@ -225,8 +225,8 @@ main {
         color: #e5f43c;
         transition: all 0.5s ease-out; }
   main#home {
-    overflow: hidden; 
-    padding: 100px;}
+    overflow: hidden;
+    padding: 8rem;}
     main#home h1 {
       margin-top: 15vh; }
 
@@ -505,3 +505,12 @@ main {
     background-image: linear-gradient(to left, rgba(42, 179, 24, 1) , rgba(42, 179, 24, 0.7));
     border: none;
   }
+
+.illustration{
+  position: fixed;
+  top:25%;
+  right: 10%;
+  width: 750px;
+  height: 450px;
+  z-index: -1;
+}
