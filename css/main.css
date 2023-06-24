@@ -508,8 +508,8 @@ main {
 
 .illustration{
   position: fixed;
-  top:25%;
-  right: 10%;
+  top:280px;
+  left: 950px;
   width: 750px;
   height: 450px;
   z-index: -1;
