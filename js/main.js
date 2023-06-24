@@ -1,7 +1,7 @@
 //code from here
 const menuBtn=document.querySelector('.menu-btn');
 const menuBtnBg=document.querySelector('.menu-btn-bg');
-const menuBtnExtra=document.querySelector('.menu-btn-extra');
+const menuBtnExtra=document.querySelector('.detail-btn');
 const menu=document.querySelector('.menu');
 const menuNav=document.querySelector('.menu-nav');
 const menuBranding=document.querySelector('.menu-branding');
