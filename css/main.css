@@ -184,7 +184,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  min-width: 100vw;
+  width: 100vw;
 
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -468,6 +468,11 @@ main {
     font-size: 4rem; }
   main#home{
     text-align: center;}
+  
+    .contact-text{  
+      padding: 0 10vw;
+    }
+
   .projects {
     grid-template-columns: 1fr; } }
 
@@ -597,8 +602,6 @@ main {
 
 main#contact{
   padding-top: 5%;
-  padding-left: 10%;
-  padding-right: 10%;
   width: 100vw;}
 
     .contact-text{  
@@ -608,6 +611,5 @@ main#contact{
     .contact-container{  
       width: auto;
       display: grid;
-      min-width: 300px;
       margin: auto auto;
     }
