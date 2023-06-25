@@ -180,7 +180,12 @@
 
 body {
   background: #000000;
-  height: 100%;
+ 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw;
+
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
@@ -321,19 +326,6 @@ main {
       border-color: #e5f43c;
       transition: all 0.5s ease-out; }
 
-.contact-background{
-  background: url(../img/contact.png);
-  background-attachment:local;
-  background-size:cover;
-
-  position:fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-  opacity: 0.2;}
-
-
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -371,26 +363,41 @@ main {
   color: #333; }
 
 #main-footer {
-  text-align: center;
-  font-weight: bold;
-  font-size: 3vh;
+  
+  display: block;
+
   padding: 1vh;
+  height: 6vh; 
+  margin-top: auto;
+
   background: url(../img/cyber.jpg);
   background-attachment: fixed;
   background-size: cover;
+
   color: #fff;
-  height: 6vh; }
+  text-align: center;
+  font-weight: bold;
+  font-size: 3vh;}
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); }
+  .menu-btn-bg,.menu-btn{
+    visibility: hidden;}
+  }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); } 
   .menu-btn-bg,.menu-btn{
-      visibility: hidden;
-    }
+      visibility: hidden;}
+  .illustration{
+    right: 0!important;}}
+
+@media screen and (max-width: 900px){
+      .illustration{
+      visibility: hidden;}}
+
 
 @media screen and (max-width: 768px) {
   main {
@@ -432,6 +439,8 @@ main {
       width: 150px;
       height: 150px;
       background-size: cover; }
+  .illustration{
+    visibility: hidden;}
   .about-info {
     grid-template-areas: 'bioimage'
  'bio'
@@ -440,7 +449,13 @@ main {
  'job3';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); } 
+  
+    .contact-text{  
+      margin-left: auto;
+      margin-right: auto;}
+    
+  }
 
 @media screen and (max-width: 500px) {
   .icon {
@@ -514,27 +529,19 @@ main {
   height: 10vh;
 }
 
-.contact-text{  
-  width: 60%;
-  min-width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-}
-
-.contact-container{  
-  width: 25%;
-  min-width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-}
-
-
-
-
 .card{
-  margin: 10px 0;
+  margin: 1vh auto;
+
+  width: 25vw;
+  min-width: 300px !important;
+
+}
+
+.card-body{
+  padding-top: auto;
+  padding-bottom: auto;
+  margin: auto auto;
+
 }
 
 .card > a{
@@ -569,8 +576,8 @@ main {
 
 .illustration{
   position: fixed;
-  top:280px;
-  left: 850px;
+  top: 35vh;
+  right: 15vh;
   width: calc(50vh*3/2);
   height: 50vh;
   z-index: -1;
@@ -587,3 +594,20 @@ main {
 .font-big{
   font-size: 5vh !important;
 }
+
+main#contact{
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100vw;}
+
+    .contact-text{  
+      margin-top: 3vh;      
+    }
+    
+    .contact-container{  
+      width: auto;
+      display: grid;
+      min-width: 300px;
+      margin: auto auto;
+    }
