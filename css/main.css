@@ -184,7 +184,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  width: 100vw;
+  max-width: 100vw;
 
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -405,6 +405,10 @@ main {
     text-align: center; }
     main#home{
       padding: 10px;}
+
+    main#contact{
+      padding-left: 10px !important;
+      padding-right: 10px !important; }
     .logo-icon{
       margin-top: 50px;}
     .hide-col{
@@ -602,14 +606,15 @@ main {
 
 main#contact{
   padding-top: 5%;
-  width: 100vw;}
+  padding-left: 10%;
+  padding-right: 10%;}
 
-    .contact-text{  
-      margin-top: 3vh;      
-    }
-    
-    .contact-container{  
-      width: auto;
-      display: grid;
-      margin: auto auto;
-    }
+  .contact-text{  
+    margin-top: 3vh;      
+  }
+  
+  .contact-container{  
+    width: auto;
+    display: grid;
+    margin: auto auto;
+  }
