@@ -626,18 +626,18 @@ main#about{
 }
 
 .font-xsmall{
-  font-size: 2vmin !important;
+  font-size: 2vh !important;
 }
 .font-small{
-  font-size: 2.5vmin !important;
+  font-size: 2.5vh !important;
 }
 
 .font-normal{
-  font-size: 3vmin !important;
+  font-size: 3vh !important;
 }
 
 .font-big{
-  font-size: 5vmin !important;
+  font-size: 5vh !important;
 }
 
 main#contact{
