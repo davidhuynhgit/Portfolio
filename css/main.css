@@ -300,8 +300,8 @@ main#about{
     margin: auto;
     border-radius: 50%;
     border: none; 
-    width: 20vmin;
-    height: 20vmin;}
+    width: 20vh;
+    height: 20vh;}
     
   .about-info .bio {
     grid-area: bio;
@@ -450,7 +450,7 @@ main#about{
     }
     main .lg-heading {
       margin-top: 10vh;
-      font-size: 20vmin;  }
+      font-size: 15vmin;  }
   ul.menu-nav,
   div.menu-branding {
     float: none;
