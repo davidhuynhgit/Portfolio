@@ -332,11 +332,11 @@ main#about{
       inherits: true;}
 
   .revolve-border{
-    --d: 5000ms;
+    --d: 20000ms;
     --angle: 0deg;
     --c1: rgba(168, 239, 255, 1);
     --c2: rgba(168, 239, 255, 0.1);
-    border: 0.3vmin solid;
+    border: 0.5vmin solid;
     border-image: repeating-conic-gradient(from var(--angle), var(--c2), var(--c1) 0.5turn) 1;
     animation: borderRotate var(--d) linear infinite forwards;}
 
